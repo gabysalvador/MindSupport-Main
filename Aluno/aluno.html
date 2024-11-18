@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindSupport</title>
+    <link rel="stylesheet" href="aluno.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Escolha seu Nickname e Avatar</h2>
+        <input type="text" id="nickname" placeholder="Digite seu nickname" maxlength="15">
+        
+        <div class="avatar-selection">
+            <h3>Escolha um Avatar:</h3>
+            <div class="avatars" id="avatars">
+                <img src="/img/avatar1.png" alt="Avatar 1" class="avatar" onclick="selectAvatar('avatar1.png')">
+                <img src="/img/avatar2.png" alt="Avatar 2" class="avatar" onclick="selectAvatar('avatar2.png')">
+                <img src="/img/avatar3.png" alt="Avatar 3" class="avatar" onclick="selectAvatar('avatar3.png')">
+                <img src="/img/avatar4.png" alt="Avatar 4" class="avatar" onclick="selectAvatar('avatar4.png')">
+            </div>
+        </div>
+              
+        <!-- Botão de confirmação com redirecionamento -->
+        <a href="emocao.html">
+            <button>Confirmar</button>
+        </a>
+    </div>
+
+    <script src="aluno.js"></script>
+</body>
+</html>

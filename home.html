@@ -1,0 +1,123 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <title>Folder Library Concept</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <script src="home.js"></script>
+</head>
+
+
+<body>
+
+
+<header>
+
+  <div class="logo">MindSupport</div>
+  <ul>
+    <li><i class="fa fa-question-circle-o fa-lg"></i> Ajuda</li>
+    <li class="active"><i class="fa fa-tachometer fa-lg"></i> Início</li>
+    <a href="profile.html"><li><i class="fa fa-user fa-lg"></i> Meu Perfil</li></a>
+  </ul>
+</header>
+
+<section id="wrapper">
+  <nav>
+    <ul>
+      <li class="active tooltiper" data-tooltip="Meus documentos"><i class="fa fa-folder-open-o" aria-hidden="true"></i></li>
+    </ul>
+  </nav>
+  
+  <div class="main">
+    <h1>Minhas Turmas</h1>
+    <div class="left">
+      <!-- Pastas Existentes -->
+      <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="folder1"><i class="fa fa-folder" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i><p>4° Ano (Manhã)</p></div>
+ 
+    </div>
+  </div>
+
+  <!-- Seção para adicionar novas turmas/pastas -->
+  <div class="right">
+    <div class="input-select-wrap">
+      <div class="fileUpload" id="addFolderBtn">
+        <span>+</span>
+        <p>Adicionar uma nova turma</p>
+      </div>
+    </div>
+    <div id='draggableFile'>
+      <span>Arraste seus arquivos aqui<br/><span>Você pode adicionar arquivos às pastas</span></span>
+    </div>
+    <div id='result'></div>
+  </div>
+</section>
+
+<!-- Conteúdo das pastas -->
+<div class="top-droppable folder-content easeout2 closed" id="folder1-content">
+  <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
+  <h2><i class="fa fa-folder" aria-hidden="true"></i><span>4° Ano (Manhã)</span></h2>
+</div>
+<div class="top-droppable folder-content easeout2 closed" id="folder2-content">
+  <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
+  <h2><i class="fa fa-folder" aria-hidden="true"></i><span>6° Ano (Manhã)</span></h2>
+</div>
+<div class="top-droppable folder-content easeout2 closed" id="folder3-content">
+  <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
+  <h2><i class="fa fa-folder" aria-hidden="true"></i><span>4° Ano (Tarde)</span></h2>
+</div>
+<div class="top-droppable folder-content easeout2 closed" id="folder4-content">
+  <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
+  <h2><i class="fa fa-folder" aria-hidden="true"></i><span>6° Ano (Tarde)</span></h2>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function() {
+    let folderCount = 5;
+
+    // Função para criar nova pasta
+    $("#addFolderBtn").on("click", function() {
+      folderCount++;
+      const newFolderId = 'folder' + folderCount;
+      const newFolderContentId = newFolderId + '-content';
+
+      // Adicionando nova pasta à esquerda
+      $(".left").append(
+        <div class="top-droppable folder tooltiper tooltiper-up" data-tooltip="0 file" id="${newFolderId}">
+          <i class="fa fa-folder" aria-hidden="true"></i><i class="fa fa-check" aria-hidden="true"></i>
+          <p>Nova Turma ${folderCount}</p>
+        </div>
+      );
+
+      // Adicionando conteúdo da nova pasta
+      $("body").append(
+        <div class="top-droppable folder-content easeout2 closed" id="${newFolderContentId}">
+          <div class="close-folder-content"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <h2><i class="fa fa-folder" aria-hidden="true"></i><span>Nova Turma ${folderCount}</span></h2>
+        </div>
+      );
+
+      // Atribuindo eventos de duplo clique para abrir a nova pasta
+      $("#" + newFolderId).dblclick(function() {
+        $("#" + newFolderContentId).css("display", "block").removeClass("closed").addClass("easeout2");
+      });
+
+      // Função para fechar a nova pasta
+      $("#" + newFolderContentId + " .close-folder-content").click(function() {
+        $("#" + newFolderContentId).addClass("closed").delay(300).fadeOut();
+      });
+    });
+  });
+</script>
+</body>
+</html>

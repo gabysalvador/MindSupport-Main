@@ -1,0 +1,9 @@
+body {
+    background-image: linear-gradient(to right, #5e63b3, #82badb, #5e63b3);
+}
+.page-wrap {
+    min-height: 100vh;
+}
+.container {
+    max-width: 900px;
+}
