@@ -24,38 +24,42 @@
 
             <!-- Text section -->
             <div class="form-group">
-                <label for="name">Qual motivo da sua vergonha?</label>
-                <input type="text" name="name" id="raiva" class="formControl">
+                <label for="motivo-vergonha">Qual o motivo da sua vergonha?</label>
+                <div id="motivo-vergonha" class="options-group">
+                    <label>
+                        <input type="radio" name="motivo-vergonha" value="erro-publico"> Cometer um erro em público
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-vergonha" value="julgamento"> Medo do julgamento dos outros
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-vergonha" value="comparacao"> Comparação com outras pessoas
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-vergonha" value="falta-de-controle"> Perder o controle em uma situação
+                    </label>
+                </div>
             </div>
-            <!-- end of text section -->
-
-            <!-- Type Email section -->
-            <div class="form-group">
-                <label for="email">Como você se sente quando isso acontece?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- end of Email section -->
-            <div class="form-group">
-                <label for="email">O que você faz/poderia fazer para lidar com esse sentimento?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- Type Number section -->
             
-            <!-- end of Number section -->
-
-            <!-- Type Number section -->
-        
-            <!--  end of number section -->
-
-            <!-- select section -->
-           
+            <div class="form-group">
+                <label for="sentimentos-vergonha">Como você se sente quando isso acontece?</label>
+                <div id="sentimentos-vergonha" class="options-group">
+                    <label>
+                        <input type="radio" name="sentimentos-vergonha" value="vergonha"> Sinto vergonha
+                    </label>
+                    <label>
+                        <input type="radio" name="sentimentos-vergonha" value="embaraço"> Fico muito embaraçado(a)
+                    </label>
+                    <label>
+                        <input type="radio" name="sentimentos-vergonha" value="exposicao"> Sinto que estou sendo exposto(a) demais
+                    </label>
+                    <label>
+                        <input type="radio" name="sentimentos-vergonha" value="desejo-fuga"> Desejo fugir da situação
+                    </label>
+                </div>
+            </div>
             
-
-       
-            <!-- End of checkbox section -->
-
-            <!-- Textarea section -->
-           
+      
               
             <div class="form-group">
                 <button type="submit" id="submit" class="btn">Enviar</button>

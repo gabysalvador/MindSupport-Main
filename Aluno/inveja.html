@@ -21,40 +21,42 @@
         </header>
         <form action="" id="survey-form">
 
-            <!-- Text section -->
             <div class="form-group">
-                <label for="name">Qual motivo da sua inveja?</label>
-                <input type="text" name="name" id="raiva" class="formControl">
+                <label for="motivo-inveja">Qual o motivo da sua inveja?</label>
+                <div id="motivo-inveja" class="options-group">
+                    <label>
+                        <input type="radio" name="motivo-inveja" value="sucesso-outra-pessoa"> Sucesso de outra pessoa
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-inveja" value="bens-materiais"> Bens materiais de outra pessoa
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-inveja" value="habilidades-ou-talentos"> Habilidades ou talentos de alguém
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-inveja" value="relacionamentos"> Relacionamentos de outra pessoa
+                    </label>
+                </div>
             </div>
-            <!-- end of text section -->
-
-            <!-- Type Email section -->
-            <div class="form-group">
-                <label for="email">Como você se sente quando isso acontece?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- end of Email section -->
-            <div class="form-group">
-                <label for="email">O que você faz/poderia fazer para lidar com esse sentimento?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- Type Number section -->
             
-            <!-- end of Number section -->
-
-            <!-- Type Number section -->
-        
-            <!--  end of number section -->
-
-            <!-- select section -->
-           
+            <div class="form-group">
+                <label for="sintomas-inveja">Como você se sente quando isso acontece?</label>
+                <div id="sintomas-inveja" class="options-group">
+                    <label>
+                        <input type="radio" name="sintomas-inveja" value="insatisfacao"> Insatisfação pessoal
+                    </label>
+                    <label>
+                        <input type="radio" name="sintomas-inveja" value="tristeza"> Tristeza ou frustração
+                    </label>
+                    <label>
+                        <input type="radio" name="sintomas-inveja" value="raiva"> Raiva ou ressentimento
+                    </label>
+                    <label>
+                        <input type="radio" name="sintomas-inveja" value="motivacao"> Motivação para melhorar
+                    </label>
+                </div>
+            </div>
             
-
-       
-            <!-- End of checkbox section -->
-
-            <!-- Textarea section -->
-           
               
             <div class="form-group">
                 <button type="submit" id="submit" class="btn">Enviar</button>

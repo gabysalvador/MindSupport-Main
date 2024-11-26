@@ -21,40 +21,42 @@
         </header>
         <form action="" id="survey-form">
 
-            <!-- Text section -->
             <div class="form-group">
-                <label for="name">Qual motivo da sua medo?</label>
-                <input type="text" name="name" id="raiva" class="formControl">
+                <label for="motivo-medo">Qual o motivo do seu medo?</label>
+                <div id="motivo-medo" class="options-group">
+                    <label>
+                        <input type="radio" name="motivo-medo" value="falhar"> Medo de falhar
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-medo" value="rejeicao"> Medo de rejeição
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-medo" value="perigo-fisico"> Medo de perigo físico
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-medo" value="desconhecido"> Medo do desconhecido
+                    </label>
+                </div>
             </div>
-            <!-- end of text section -->
-
-            <!-- Type Email section -->
-            <div class="form-group">
-                <label for="email">Como você se sente quando isso acontece?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- end of Email section -->
-            <div class="form-group">
-                <label for="email">O que você faz/poderia fazer para lidar com esse sentimento?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- Type Number section -->
             
-            <!-- end of Number section -->
-
-            <!-- Type Number section -->
-        
-            <!--  end of number section -->
-
-            <!-- select section -->
-           
+            <div class="form-group">
+                <label for="sintomas-medo">Como você se sente quando isso acontece?</label>
+                <div id="sintomas-medo" class="options-group">
+                    <label>
+                        <input type="radio" name="sintomas-medo" value="paralisado"> Paralisado(a)
+                    </label>
+                    <label>
+                        <input type="radio" name="sintomas-medo" value="inquieto"> Inquieto(a) ou agitado(a)
+                    </label>
+                    <label>
+                        <input type="radio" name="sintomas-medo" value="alerta"> Extremamente alerta
+                    </label>
+                    <label>
+                        <input type="radio" name="sintomas-medo" value="fuga"> Desejo de fugir
+                    </label>
+                </div>
+            </div>
             
-
-       
-            <!-- End of checkbox section -->
-
-            <!-- Textarea section -->
-           
               
             <div class="form-group">
                 <button type="submit" id="submit" class="btn">Enviar</button>

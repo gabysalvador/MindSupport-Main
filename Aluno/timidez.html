@@ -24,38 +24,41 @@
 
             <!-- Text section -->
             <div class="form-group">
-                <label for="name">Qual motivo dasua timidez?</label>
-                <input type="text" name="name" id="raiva" class="formControl">
+                <label for="motivo-timidez">Qual o motivo da sua timidez?</label>
+                <div id="motivo-timidez" class="options-group">
+                    <label>
+                        <input type="radio" name="motivo-timidez" value="interacoes-sociais"> Interações sociais
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-timidez" value="falando-em-publico"> Falando em público
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-timidez" value="medo-do-julgamento"> Medo do julgamento dos outros
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-timidez" value="experiencias-passadas"> Experiências passadas negativas
+                    </label>
+                </div>
             </div>
-            <!-- end of text section -->
-
-            <!-- Type Email section -->
-            <div class="form-group">
-                <label for="email">Como você se sente quando isso acontece?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- end of Email section -->
-            <div class="form-group">
-                <label for="email">O que você faz/poderia fazer para lidar com esse sentimento?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- Type Number section -->
             
-            <!-- end of Number section -->
-
-            <!-- Type Number section -->
-        
-            <!--  end of number section -->
-
-            <!-- select section -->
-           
+            <div class="form-group">
+                <label for="sentimentos-timidez">Como você se sente quando isso acontece?</label>
+                <div id="sentimentos-timidez" class="options-group">
+                    <label>
+                        <input type="radio" name="sentimentos-timidez" value="nervoso"> Nervoso(a)
+                    </label>
+                    <label>
+                        <input type="radio" name="sentimentos-timidez" value="vergonha"> Vergonha
+                    </label>
+                    <label>
+                        <input type="radio" name="sentimentos-timidez" value="isolado"> Isolado(a)
+                    </label>
+                    <label>
+                        <input type="radio" name="sentimentos-timidez" value="evitar-situacao"> Desejo de evitar a situação
+                    </label>
+                </div>
+            </div>
             
-
-       
-            <!-- End of checkbox section -->
-
-            <!-- Textarea section -->
-           
               
             <div class="form-group">
                 <button type="submit" id="submit" class="btn">Enviar</button>

@@ -20,41 +20,40 @@
             </p>
         </header>
         <form action="" id="survey-form">
-
-            <!-- Text section -->
             <div class="form-group">
-                <label for="name">Qual motivo da sua raiva?</label>
-                <input type="text" name="name" id="raiva" class="formControl">
+                <label for="motivo-raiva">Qual o motivo da sua raiva?</label>
+                <div id="motivo-raiva" class="options-group">
+                    <label>
+                        <input type="radio" name="motivo" value="familia"> Família
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo" value="amigos"> Amigos
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo" value="escola"> Escola
+                    </label>
+                </div>
             </div>
-            <!-- end of text section -->
-
-            <!-- Type Email section -->
-            <div class="form-group">
-                <label for="email">Como você se sente quando isso acontece?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- end of Email section -->
-            <div class="form-group">
-                <label for="email">O que você faz/poderia fazer para lidar com esse sentimento?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- Type Number section -->
             
-            <!-- end of Number section -->
-
-            <!-- Type Number section -->
-        
-            <!--  end of number section -->
-
-            <!-- select section -->
-           
+            <div class="form-group">
+                <label for="acao-raiva">Quando isso acontece, você fica com vontade de:</label>
+                <div id="acao-raiva" class="options-group">
+                    <label>
+                        <input type="radio" name="acao" value="chorar"> Chorar
+                    </label>
+                    <label>
+                        <input type="radio" name="acao" value="gritar"> Gritar
+                    </label>
+                    <label>
+                        <input type="radio" name="acao" value="ficar-sozinho"> Ficar sozinho
+                    </label>
+                    <label>
+                        <input type="radio" name="acao" value="procurar-ajuda"> Procurar ajuda
+                    </label>
+                </div>
+            </div>
             
-
-       
-            <!-- End of checkbox section -->
-
-            <!-- Textarea section -->
-           
+         
               
             <div class="form-group">
                 <button type="submit" id="submit" class="btn">Enviar</button>

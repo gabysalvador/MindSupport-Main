@@ -23,38 +23,42 @@
 
             <!-- Text section -->
             <div class="form-group">
-                <label for="name">Qual motivo da sua ansiedade?</label>
-                <input type="text" name="name" id="raiva" class="formControl">
+                <label for="motivo-ansiedade">Qual o motivo da sua ansiedade?</label>
+                <div id="motivo-ansiedade" class="options-group">
+                    <label>
+                        <input type="radio" name="motivo-ansiedade" value="trabalho"> Trabalho/Estudos
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-ansiedade" value="relacionamentos"> Relacionamentos(ex: amigos, familia e etc..)
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-ansiedade" value="saude"> Saúde
+                    </label>
+                    <label>
+                        <input type="radio" name="motivo-ansiedade" value="incertezas"> Medo do futuro/Incetezas
+                    </label>
+                </div>
             </div>
-            <!-- end of text section -->
-
-            <!-- Type Email section -->
-            <div class="form-group">
-                <label for="email">Como você se sente quando isso acontece?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- end of Email section -->
-            <div class="form-group">
-                <label for="email">O que você faz/poderia fazer para lidar com esse sentimento?</label>
-                <input type="email" name="email" id="sentimentos" class="formControl" >
-            </div>
-            <!-- Type Number section -->
             
-            <!-- end of Number section -->
-
-            <!-- Type Number section -->
-        
-            <!--  end of number section -->
-
-            <!-- select section -->
-           
+            <div class="form-group">
+                <label for="sintomas-ansiedade">Como você se sente quando isso acontece?</label>
+                <div id="sintomas-ansiedade" class="options-group">
+                    <label>
+                        <input type="radio" name="sintomas-ansiedade" value="inquieto"> Inquieto(a)
+                    </label>
+                    <label>
+                        <input type="radio" name="sintomas-ansiedade" value="desconforto"> Desconforto físico (ex: coração acelerado)
+                    </label>
+                    <label>
+                        <input type="radio" name="sintomas-ansiedade" value="dificuldade-concentrar"> Dificuldade de concentração
+                    </label>
+                    <label>
+                        <input type="radio" name="sintomas-ansiedade" value="medo-intenso"> Medo ou preocupação intensa
+                    </label>
+                </div>
+            </div>
             
-
-       
-            <!-- End of checkbox section -->
-
-            <!-- Textarea section -->
-           
+          
               
             <div class="form-group">
                 <button type="submit" id="submit" class="btn">Enviar</button>
